@@ -70,16 +70,63 @@ nav ul li a:hover::after{
     color: blue;
 }
 
-#about{
+#about {
     padding: 80px 0;
-
+    margin-top: 20px;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+}
 
-.user{
+.row {
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Aligns image and text at the same height */
+    gap: 40px; /* Adds spacing between image and text */
+}
+
+.about-col-1 {
+    flex: 1; /* Image container takes equal space */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 10px;
+    justify-content: center; /* Centers image inside the div */
 }
+
+.user {
+    width: 100%; /* Responsive */
+    max-width: 500px; /* Limits image size */
+    height: auto;
+}
+
+.about-colo-2 {
+    flex: 1; /* Text container takes equal space */
+    color: blueviolet;
+}
+
+.about-colo-2 h1 {
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin-top: -200px;
+    justify-self: center;
+    
+
+ }
+
+ #table{
+    padding: 80px 0;
+    margin-top: 20px;
+
+ }
+ .tab{
+    width: 100%;
+    justify-content: space-between;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #ff004f;
+    margin-top: 20px;
+    color: aliceblue;
+ }
+
+ .tab table tr th{
+    justify-self: space-between;
+    align-self: center; 
+ }
